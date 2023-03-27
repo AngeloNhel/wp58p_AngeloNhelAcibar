@@ -1,0 +1,23 @@
+.title {
+    padding: 30px;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: monospace;
+    color: rgb(201, 201, 78);
+}
+.btna {
+    background-color: antiquewhite;
+    float: right;
+}
+
+.profile { 
+    max-width: 130px;
+    height: auto;
+}
+.text {
+    float:right;
+}
+form {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;

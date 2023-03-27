@@ -1,0 +1,58 @@
+body {
+   background-color: white;
+    color: black;
+    padding: 100px;
+}
+.black {
+    position: absolute;
+    background: rgb(78, 78, 78);
+    height: 80px;
+    width: 480px;
+    left: calc(50% - 240px);
+}
+.textblue {
+    background-color: rgb(58, 50, 131);
+    position: absolute;
+    top: 130px;
+    width: 150px;
+    height: 150px;
+    left: calc(50% - 75px);
+    border-radius: 5px 
+}
+.textblue {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+.textdownleftbox {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 150px;
+    width: 150px;
+    height: 115px;
+    left: 430px;
+    box-shadow: 5px 10px rgb(233, 233, 233);
+    border-radius: 16px
+}
+.textdownleftbox{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(58, 50, 131);
+}
+.textdownrightbox {
+    background-color:rgb(255, 255, 255);
+    position: fixed;
+    top: 150px;
+    width: 150px;
+    height: 115px;
+    right: 430px;
+    box-shadow: 5px 10px rgb(233, 233, 233);
+    
+    border-radius: 16px
+}
+.textdownrightbox{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(58, 50, 131);
+}
+

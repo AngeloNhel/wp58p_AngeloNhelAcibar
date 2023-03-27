@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>bootstrap Exercise</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    
+    <link rel="stylesheet" href="css//bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="js/bootstrap.bundle.js"></script>
+
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css">
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }  
+    </style>
+
+</head>
+    <body>
+
+    <div class="container bg-dark">  
+      <div class="breadcrumb-item active" aria-current="page"><< back to list</div>
+      <div class="title">Client Profile (Jonh Doe)<button class="btn btna"><i class="fa-solid fa-plus"></i> Add Client</button></div>
+     
+    </div>
+
+    <div class="container bg-success">
+          <div class="row">
+            <div class="col-6">
+              <div style="float: right; text-align: right; font-size: 30px;">
+                <div>ID</div>
+                <div>Birthdate</div>
+                <div>Start Date</div>
+                <div>Language</div>
+              </div>
+                <div><img style="margin-top: 30px;" class="profile" src="/Bootstrap_execise_2/assets/profile.png"></div>
+                <div><button style="margin-bottom: 30px;" class="btn btn-dark">Upload Photo</button></div>
+            </div>
+        
+          <div class="col-md-6" style="font-size: 30px;">
+            <div style="float: right;"><button class="btn btn-success"><i class="fa-solid fa-pen-to-square"></i></button></div>
+            <div>12345678</div>
+            <div>10-22-2021</div>
+            <div>10-23-1017</div>
+            <div>English</div>
+          </div>
+        </div>  
+    </div>
+     
+  <div class="container bg-dark">
+    <ul class="nav nav-tabs" style="padding-top: 20px;">
+      <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#contact">Contact Details</a></li>
+      <li class="nav-item"><a class="nav-link" data-toggle="tab" href="file">Files Attached</a></li>
+      <li class="nav-item"><a class="nav-link" data-toggle="tab" href="servie">Service Delivered</a></li>
+      <li class="nav-item"><a class="nav-link" data-toggle="tab" href="client">Client Progress Notes</a></li>
+      <li class="nav-item"><a class="nav-link" data-toggle="tab" href="monitor">Client Fund Monitor</a></li>
+      <li class="nav-item"><a class="nav-link" data-toggle="tab" href="time">Time Tracker</a></li>
+      <li class="nav-item"><a class="nav-link" data-toggle="tab" href="feedback">Feedback</a></li>
+    </ul>
+  </div>
+    
+    
+        <div class="tab-content container bg-dark">
+          <div id="contact">
+            <form>
+              <div class="row">
+                <div class="col-3">
+                  <labe class="form-label">Address 1</label>
+                  <input type="text" class="form-control form-control-sm" name="address 1" value="" placeholder="Address 1" required/>
+                </div>
+                <div class="col-3">
+                  <labe class="form-label">Address 2</label>
+                  <input type="text" class="form-control form-control-sm" name="address 2" value="" placeholder="Address 2" required/>
+                </div>
+                <div class="col-3">
+                  <labe class="form-label">State</label>
+                  <input type="text" class="form-control form-control-sm" name="state" value="" placeholder="State" required/>
+                </div>
+                <div class="col-3">
+                  <labe class="form-label">City</label>
+                  <input type="text" class="form-control form-control-sm" name="city" value="" placeholder="City" required/>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-3">
+                  <labe class="form-label">Postal</label>
+                  <input type="text" class="form-control form-control-sm" name="postal" value="" placeholder="Postal" required/>
+                </div>
+                <div class="col-3">
+                  <labe class="form-label">Country</label>
+                  <select class="form-control form-select">
+                    <option>--None Selected--</option>
+                    <option>Germany</option>
+                    <option>Nepal</option>
+                    <option>Argentina</option>
+                  </select>
+              </div>
+              <div class="row">
+                <div class="col-3">
+                  <labe class="form-label">Mobile Phone</label>
+                  <input type="text" class="form-control form-control-sm" name="mobile-phone" value="" placeholder="Mobile Phone" required/>
+                </div>
+                <div class="col-3">
+                  <labe class="form-label">Home Phone</label>
+                  <input type="text" class="form-control form-control-sm" name="home-phone" value="" placeholder="Home Phone" required/>
+                </div>
+                <div class="col-3">
+                  <labe class="form-label">Email</label>
+                  <input type="text" class="form-control form-control-sm" name="email" value="" placeholder="Email" required/>
+                </div>
+                <div class="col-3">
+                  <labe class="form-label">Other Phone</label>
+                  <input type="text" class="form-control form-control-sm" name="other-phone" value="" placeholder="Other Phone" required/>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div id="file">
+            <h3>Menu 1</h3>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+
+    </body>
+</html>

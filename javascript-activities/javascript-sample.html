@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>First javascript activity.</div>
+
+    <div id="js-stage"></div>
+    <input type="text" placeholder="First Name" id="text-name">
+    <button onclick="doHello()">test</button>
+</body>
+<script>
+    document.getElementById('js-stage').innerHTML = "hello javascript!!!" ;
+    document.getElementById('js-stage').innerHTML += "<br/> Hello from Kodego wd58p!!"
+    
+
+
+    function doHello(){
+        var firstname = document.getElementById('text-name').value;
+        document.getElementById('js-stage').innerHTML = "hello from " + firstname + "!!!" ;
+        
+    }
+</script>
+</html>

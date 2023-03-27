@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>bootstrap Exercise</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/Bootstrap_execise_1/css/all.min.css">
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }  
+        .row {
+          margin-bottom: 20px;
+        }
+    </style>
+
+</head>
+    <body>
+      <h2>Form</h2>
+      <div class="container">
+        <form> 
+
+          <div class="row">
+            <div class="col-3"> 
+              <div class="form-floating">
+               <input type="text" class="form-control form-control-lg" name="firstname" value="" placeholder="Firts Name"/>
+               <label class="form-label">firts Name</label>
+               <div class="valid-feedback">ok</div>
+               <div class="invalid-feedback">please fill this text</div>
+              </div>
+            </div>
+             <div class="col-3">
+              <labe class="form-label">last Name</label>
+              <input type="text" class="form-control form-control-sm" name="lastname" value="" placeholder="last name" required/>
+             </div>
+          </div>
+          <div class="col-3"> 
+            <div class="form-floating">
+             <textarea type="text" class="form-control form-control-lg" name="firstname" value="" placeholder="Firts Name"></textarea>
+             <label class="form-label">firts Name</label>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-3">
+            <labe class="form-label">Gender</label>
+            <select class="form-control form-select">
+              <option>Select a gender</option>
+              <option>male</option>
+              <option>female</option>
+              <option>not to disclose</option>
+            </select>
+          </div>
+       
+            <div class="col-3">
+              <labe class="form-label">Civil Status</label>
+              <select class="form-control form-select">
+                <option>Select Status</option>
+                <option>single</option>
+                <option>married</option>
+                <option>widow</option>
+              </select>
+            </div>
+      
+          </div>
+        </form>
+
+          
+      <div class="row">
+        <div class="col-3-sm">
+          <input type="checkbox" id="optn1" class="form-check-input"/>
+          <label for="optn1" class="form-check-label">Opthin 1</label>
+          <input type="checkbox" class="form-check-input"/>
+          <label class="form-check-label">Opthin 1</label>
+          <input type="checkbox" class="form-check-input"/>
+          <label class="form-check-label">Opthin 1</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3-sm">
+          <input type="radio" id="radio1" class="form-check-input" name="radio-option"/>
+          <label for="radio1" class="form-check-label">Opthin 1</label>
+
+          <input type="radio" class="form-check-input" name="radio-option"/>
+          <label class="form-check-label">Opthin 1</label>
+
+          <input type="radio" class="form-check-input" name="radio-option"/>
+          <label class="form-check-label">Opthin 1</label>
+        </div>
+      </div>
+
+
+      <div class="form-check form-switch">
+        <input type="checkbox" class="form-check-input bg-dark"/>
+        <label class="form-check-label">Opthin 1</label>
+      </div>
+
+      
+      </div>
+    </body>
+</html>

@@ -1,0 +1,72 @@
+ul {
+    padding-left: 370px;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #303030;
+  }
+li {
+    float: left;
+}
+a {
+    display: block;
+    color: white;
+    text-align:center;
+    padding: 16px;
+    text-decoration: none;
+  }
+a:hover {
+    background-color: #727272;
+  }
+
+
+.banner-text{
+    background-color: antiquewhite;
+    text-align: right;
+    padding: 100px;
+}
+.banner-text h1 {
+    padding-right: 70px;
+}
+.banner-text p {
+    padding-right: 120px;
+}
+
+#about-me {
+    background-color: #727272;
+    text-align: left;
+    padding: 50px;
+}
+#about-me h3{
+        padding: 10px;
+        font-size: 30px;
+}
+#about-me p{
+    text-align: justify;
+}
+#my-portfolio {
+    background-color: antiquewhite;
+    text-align: left;
+    padding: 50px;
+}
+#my-portfolio h3 {
+    padding: 10px;
+    font-size: 30px;
+}
+#my-portfolio p{
+    text-align: justify;
+}
+#work-experience {
+    background-color: #727272;
+    text-align: left;
+    padding: 50px;
+}
+#contact-me{
+    background-color: antiquewhite;
+    padding: 10px;
+}
+#footer {
+    background-color:  #303030;
+    padding: 5px;
+}
+
+
