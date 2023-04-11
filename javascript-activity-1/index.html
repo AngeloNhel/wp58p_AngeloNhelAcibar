@@ -10,24 +10,22 @@
   
   <p>Enter the Number:</p>
 
-  <input id="inputtext" type="text">
+  <input id="inputtext" type="number">
 
-  <button onclick="onlogin()">Submit</button>
+  <button onclick="addoreven()">Submit</button>
 
   <p id="result">it is an<p id="addoreven"></p> Number</p>
   
   </body>
   <script>
 
-    let x, y;
-    function onlogin()
+    let x;
+    function addoreven()
     {
       x = parseInt(document.getElementById("inputtext").value);
       
       if(x)
       {
-        y = document.getElementById("resut");
-      
         if(x%2==0)
           document.getElementById("addoreven").innerHTML = "Even";
         else
