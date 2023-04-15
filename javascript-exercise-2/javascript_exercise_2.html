@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript Exercise 2</h1>
+    <h2>Machine Problem 1</h2>
+
+    <input id="InputNum" type="number">
+    <button onclick="AddOrEven()">Check</button>
+    <div>The result is: <span id="Result"></span></div>
+
+    <h2>Machine Problem 2</h2>
+
+    <input id="InpNumber" type="number">
+    <input id="InpNumber1" type="number">
+
+    <button onclick="addition()">+</button>
+    <button onclick="operators()">-</button>
+    <button onclick="operators()">*</button>
+    <button onclick="operators()">,</button>
+    <button onclick="operators()">/</button>
+
+     <div>The result is: <span id="equivalent"></span></div>
+
+</body>
+<Script>
+
+let CheckResult; 
+function AddOrEven()
+{
+     CheckResult = parseInt(document.getElementById("InputNum").value);
+        switch(CheckResult % 2) {
+            case 0:
+                document.getElementById("Result").innerHTML = "Even";
+                break;
+            case 1:
+                document.getElementById("Result").innerHTML = "Odd";
+        }
+}
+
+let InputNum;
+let InputNum1;
+let result = InputNum + InputNum1;
+
+function addition() 
+{
+    InputNum = parseInt(document.getElementById("InputNum").value);
+    InputNum1 = parseInt(document.getElementById("InputNum").value);
+        switch (calc) 
+        {
+            case 0: 
+               result = document.getElementById("equivalent").innerHTML = InputNum + InputNum1;
+        }
+
+}
+
+
+</Script>
+</html>

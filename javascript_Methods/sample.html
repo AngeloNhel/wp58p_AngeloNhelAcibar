@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Function Method</h1>
+    <div id="Method_Result"></div>
+    <div id="demo"></div>
+
+    <h1>Function Method</h1>
+    <div id="MethodArray_Result"></div>
+   
+   <!-- <div id="Method_Result1"></div>
+    <div id="Method_Result2"></div>
+    <div id="Method_Result3"></div>
+    <div id="Method_Result4"></div>
+    <div id="Method_Result5"></div> --> 
+</body>
+<script>
+    const statement = "aazzzzza aaaaa aaaaa aaaaa aaaaaaaa";
+
+   /* document.getElementById("Method_Result").innerHTML = statement.length;
+    document.getElementById("Method_Result1").innerHTML = statement.slice(2,5);
+    document.getElementById("Method_Result2").innerHTML = statement.slice(-2);
+
+    document.getElementById("Method_Result3").innerHTML = statement.substr(3,10);
+
+    document.getElementById("Method_Result3").innerHTML = statement.replace("zzzz","eee");
+    document.getElementById("Method_Result4").innerHTML = statement.replaceAll("a","c"); */
+
+    addDisplayResult("Method_Result", statement.replace("zzz","eee"));
+    addDisplayResult("Method_Result", statement.slice(2,5));
+    addDisplayResult("Method_Result", statement.charAt(0));
+    addDisplayResult("Method_Result", statement.charAt(10));
+
+    addDisplayResult("Method_Result", statement.charCodeAt(23));
+
+    addDisplayResult("Method_Result", statement.split(" "));
+    addDisplayResult("Method_Result", statement.split(" ").length);
+   
+    addDisplayResult("Method_Result", statement.split(""));
+    addDisplayResult("Method_Result", statement.split(" ",10));
+    addDisplayResult("Method_Result", statement.split(" ",2));
+
+    addDisplayResult("Method_Result", statement.indexOf("z"));
+    addDisplayResult("Method_Result", statement.indexOf("z",3));
+    addDisplayResult("Method_Result", statement.lastIndexOf("z"));
+
+    addDisplayResult("Method_Result", statement.search("z"));
+    addDisplayResult("Method_Result", statement.match("z"));
+    
+
+    addDisplayResult("Method_Result", statement.includes("z"));
+
+
+    addDisplayResult("Method_Result", `Template literal sample: ${statement}`);
+
+
+    let firsName = 'Angelo';
+    let lastName = 'Acibar';
+
+    addDisplayResult("Method_Result", `First Name: ${firsName}, Last Name: ${lastName}`);
+
+
+    let carName = "volvo";
+    desplayResult("Method_Result",carName);
+
+
+    let x = 4 * 7;
+    desplayResult("Method_Result",x);
+
+
+    function dispayResult (value1,value2){
+        return value1 * value2;
+    }
+    document.getElementById("demo").innerHTML = dispayResult(4,3);
+
+
+    let students = ["lyks","nicole","jerold","jushua","angelo","miloy","ralph"];
+
+    addDisplayResult("MethodArray_Result", students);
+    addDisplayResult("MethodArray_Result", students.join(" - "));
+
+    addDisplayResult("MethodArray_Result", students.pop());
+
+    students.push("carlo");
+    students.push("ralph");
+    addDisplayResult("MethodArray_Result", students.join(" - "));
+    
+
+    students.shift();
+    addDisplayResult("MethodArray_Result", students.join(" - "));
+
+    students.unshift("josh");
+    addDisplayResult("MethodArray_Result", students.join(" - "));
+
+    addDisplayResult("MethodArray_Result", students.length);
+    
+    delete students[1];
+    addDisplayResult("MethodArray_Result", students);
+    addDisplayResult("MethodArray_Result", students.join(" - "));
+
+    delete students[students.length - 1];
+    addDisplayResult("MethodArray_Result", students);
+    addDisplayResult("MethodArray_Result", students.join(" - "));
+    
+    delete students[5];
+    students[5] = "gil";
+    addDisplayResult("MethodArray_Result", students);
+    addDisplayResult("MethodArray_Result", students.join(" - "));
+
+    
+    let student1 = ["rommel","gil","ronnie","revelyn","david"];
+
+    addDisplayResult("MethodArray_Result",  students.concat(student1).join(" || "));
+  
+    let allStudents =  students.concat(student1);
+    addDisplayResult("MethodArray_Result", allStudents.join(" || "));
+
+    addDisplayResult("MethodArray_Result", allStudents.concat( students.concat(student1)).join(" || "));
+    
+    let number = [1,2,3,4,5];
+    let number1 = [2,4,6,8,10];
+    let number2 = [3,6,9,12,15]
+    let allnumbers = number.concat(number1,number2);
+    addDisplayResult("MethodArray_Result", allnumbers.join(" * "));
+
+    number2.splice(2,0,500)
+    addDisplayResult("MethodArray_Result", number2.join(" * "));
+
+    let newall = allnumbers.slice(1,5)
+    addDisplayResult("MethodArray_Result", newall.join(" * "));
+
+    let filteredNum = allnumbers.filter((value) => {
+        return value < 6;
+    })
+     
+    addDisplayResult("MethodArray_Result", filteredNum.join(" || "));
+
+    let sum = allnumbers.reduce((total,value)=>{
+        return total + value;
+    });
+    addDisplayResult("MethodArray_Result", allnumbers);
+    addDisplayResult("MethodArray_Result", sum);
+
+
+    addDisplayResult("MethodArray_Result", students);
+    addDisplayResult("MethodArray_Result", students.indexOf("jerold"));
+    addDisplayResult("MethodArray_Result", students.lastIndexOf("jerold"));
+
+    let finding = students.find((value)=>{
+        if (value == "jerold"){
+            return value;
+        }
+    });
+    addDisplayResult("MethodArray_Result", finding);
+
+    let findIndex = students.findIndex((value)=>{
+        if (value == "jerold"){
+            return value;
+        }
+    });
+    addDisplayResult("MethodArray_Result", findIndex);
+
+
+
+    students = ["lyks","nicole","jerold","jushua","angelo","miloy","ralph"];
+ 
+  //  student5 = ["lyks"];
+  //  student5 = ["nicole"];
+  //  student4 = ["jerold","jushua","angelo","miloy","ralph"];
+
+    [student1,student2, ...studentRest] = students
+
+    addDisplayResult("MethodArray_Result", student1);
+    addDisplayResult("MethodArray_Result", student2);
+    addDisplayResult("MethodArray_Result", studentRest.join(" || "));
+
+    student1 = ["lyks","nicole"]
+    student2 = ["jerold","jushua"]
+
+    let resetList = [...student1, ...student2, ...studentRest];
+    addDisplayResult("MethodArray_Result", resetList.join(" || "));
+
+  
+    var nums = ['100','300','400','60','40'];
+var total = 0;    
+
+for(var i=0; i < nums.length; i++){
+    total = total + Number(nums[i]);
+}
+alert(total); 
+
+
+</script>
+</html>
+
+
+    

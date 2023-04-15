@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Javascript Exercise 5</h1>
+    
+
+    <h3>Machine Problem 1.1</h3>
+    <div id="dispayResult"></div>
+    <h3>Machine Problem 1.2</h3>
+   
+    <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">Description</th>
+            <th scope="col">Qty</th>
+            <th scope="col">Unit Price</th>
+            <th scope="col">Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" id="disc"></th>
+            <td id="quantity"></td>
+            <td id="unitPrice"></td>
+            <td id="totalAmount"></td>
+          </tr>
+        </tbody>
+      </table>
+    
+    
+</body>
+<script>
+
+let invoice = {invoiceTo:"Juan Dela Cruz",
+              date:"2023-04-15", 
+              address1: "810 Oroquieta Street Sta Cruz 1000", 
+              address2:"Manila, Metro Manila, Philippines", 
+              invoiceNumber:"6845",
+              paymentMode:"COD"};
+
+let invoiceItems = [{description: "Mouse", Qty: 3, unitPrice: 200}, 
+                    {description: "Keyboard", Qty: 3, unitPrice: 400},
+                    {description: "Monitor", Qty: 6, unitPrice: 5400},
+                    {description: "CPU Tower Case", Qty: 3, unitPrice: 1200},
+                    {description: "Headset", Qty: 3, unitPrice: 500},
+                    {description: "UPS", Qty: 1, unitPrice: 4000},];
+
+
+    desplayResult('dispayResult',"Full Name: " + invoice.invoiceTo);
+    desplayResult('dispayResult',"Invoice Number: " + invoice.invoiceNumber.padStart(10,"0"));
+    desplayResult('dispayResult', "Full Address: " + invoice.address1 + " , " +  invoice.address2);
+    desplayResult('dispayResult',"Date: " + invoice.date.replace("2023-04-15","15/40/2023"));
+    desplayResult('dispayResult',"Payment Method: " + invoice.paymentMode);
+
+
+    for (let items in invoiceItems){
+        let object = invoiceItems[items];
+    document.getElementById('disc').innerHTML +=
+     '<br>' + object.description;}
+
+     for (let items in invoiceItems){
+        let object = invoiceItems[items];
+    document.getElementById('quantity').innerHTML +=
+     '<br>' + object.Qty;}
+
+     for (let items in invoiceItems){
+        let object = invoiceItems[items];
+    document.getElementById('unitPrice').innerHTML +=
+     '<br>' + object.unitPrice;}
+
+     for (let items in invoiceItems){
+        let object = invoiceItems[items];
+    document.getElementById('totalAmount').innerHTML +=
+     '<br>' + object.unitPrice * object.Qty;}
+
+
+    let totals = 0;
+        for (i=0; i < invoiceItems.length; i++) {
+            let   object = invoiceItems[i];  
+            let  subtotal = object.unitPrice * object.Qty;
+
+            totals += subtotal;
+        }
+        alert(totals);
+
+    
+
+
+  
+    
+</script>
+</html>

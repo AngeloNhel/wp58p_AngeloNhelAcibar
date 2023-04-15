@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="num1" placeholder="1. sayı">
+    <input type="number" id="num2" placeholder="2. sayı">
+    <div>
+      <ol>
+        <button onclick="calculate(this)" value="+">[ + ] Topla</button>
+        <button onclick="calculate(this)" value="-">[ - ] Çıkar</button>
+        <button onclick="calculate(this)" value="*">[ * ] Çarp</button>
+        <button onclick="calculate(this)" value="/">[ / ] Böl</button>
+      </ol>
+    </div>
+    
+    <input type="number" id="sonuc" placeholder="Sonuç">
+</body>
+<script>
+   function calculate(button) {
+  var num1 = +document.getElementById("num1").value;
+  var num2 = +document.getElementById("num2").value;
+  var operator = button.getAttribute('value');
+  switch (operator) {
+    case "+":
+      document.getElementById("sonuc").value = num1 + num2;
+      break;
+    case "-":
+      document.getElementById("sonuc").value = num1 - num2;
+      break;
+    case "*":
+      document.getElementById("sonuc").value = num1 * num2;
+      break;
+    case "/":
+      document.getElementById("sonuc").value = num1 / num2;
+      break;
+  }
+
+}
+</script>
+</html>
