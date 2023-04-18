@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript Exercise 6</h1>
+    <h3>Machine Problem 1</h3>
+    <div id="digitToWord"></div>
+    <h3>Machine Problem 2</h3>
+    <form>
+        <label class="form-label" for="num1">Number 1: </label>
+        <input class="form-control" type="number" id="num1" readonly>
+        <label class="form-label" for="num2">Number 2: </label>
+        <input class="form-control" type="number" id="num2" readonly>
+        <label class="form-label" for="num3">Number 3: </label>
+        <input class="form-control" type="number" id="num3" readonly>
+        <button class="btn btn-outline-dark" type="button" onclick="calculateScore()">Compute</button>
+    </form>
+    <div id="displayResult"></div>
+</body>
+<script>
+
+
+// MACHINE PROBLEM 1
+
+const numToWord = (num) => {
+        const numberWord = ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"]
+
+        let numStr = num.toString();
+        let result = '';
+
+        for (let i = 0; i < numStr.length; i++) {
+            let digit = parseInt(numStr[i]);
+
+            if (i === 0) {
+                result += numberWord[digit];
+            }
+            else if (i === 1 && digit === 1) {
+                result = numberWord[parseInt(numStr.slice(-2))];
+                break;
+            } else if (i === 1) {
+                result += numberWord[digit];
+            }
+            else if (i === 2) {
+                result += numberWord[digit];
+            }
+            if (digit !== 0 && i < numStr.length - 1) {
+                result += ' ';
+            }
+        }
+        return result;
+    }
+
+desplayResult("digitToWord", numToWord(721));
+
+// MACHINE PROBLEM 2
+
+// Generate 3 random numbers with range of 50 and 100
+let num1 = Math.floor(Math.random() * 51) + 50;
+    let num2 = Math.floor(Math.random() * 51) + 50;
+    let num3 = Math.floor(Math.random() * 51) + 50;
+
+    // Set the values of the input fields
+    document.getElementById("num1").value = num1;
+    document.getElementById("num2").value = num2;
+    document.getElementById("num3").value = num3;
+
+    const calculateScore = (num) => {
+        // Calculate the average score of 3 random number
+        let averageScore = (num1 + num2 + num3) / 3;
+        let result = ' ';
+
+        // Display the result
+        if (averageScore < 75) {
+            result = "Failed";
+        } else {
+            result = "Passed";
+        }
+        desplayResult("displayResult", result);
+    }
+
+
+
+
+
+</script>
+</html>

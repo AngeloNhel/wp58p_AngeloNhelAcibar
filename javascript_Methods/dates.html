@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="dates.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="dispayResult"></div>
+    <h1>Math Methods</h1>
+
+    <div id="dispayResultMath"></div>
+</body>
+<script>
+
+    let currDate = new Date();
+    desplayResult("dispayResult",currDate);
+
+    let spesificDate = new Date('2023-01-15');
+    desplayResult("dispayResult",spesificDate);
+
+    desplayResult('dispayResultMath',Math.PI);
+    desplayResult('dispayResultMath',Math.E);
+    desplayResult('dispayResultMath',Math.SQRT2);
+    desplayResult('dispayResultMath',Math.LOG10E);
+
+    desplayResult('dispayResultMath',Math.round(12.4));
+    desplayResult('dispayResultMath',Math.round(12.5));
+
+    desplayResult('dispayResultMath',Math.ceil(12.4));
+
+    desplayResult('dispayResultMath',Math.floor(12.8));
+
+    let testNum = 12.263;
+    desplayResult('dispayResultMath',testNum.toFixed(1));
+    desplayResult('dispayResultMath',testNum.toFixed(2));
+    desplayResult('dispayResultMath',testNum.toFixed(3));
+    desplayResult('dispayResultMath',testNum.toFixed(4));
+    
+
+    desplayResult('dispayResultMath',Math.max(10, 20, 50, 15, 40));
+    desplayResult('dispayResultMath',Math.min(10, 20, 50, 15, 40));
+
+    desplayResult('dispayResultMath',Math.random());
+    desplayResult('dispayResultMath',Math.random() + 10);
+    desplayResult('dispayResultMath',Math.floor(Math.random() * 10) + 1);
+    desplayResult('dispayResultMath',Math.floor(Math.random() * 1000) + 1);
+
+
+    const alphabet = 'abcdefghijklmnopqrstuvwx';
+    desplayResult('dispayResultMath',alphabet.charAt(Math.random() * 26));
+    desplayResult('dispayResultMath',alphabet.charAt(Math.random() * 26) + 1);
+
+   
+
+
+</script>
+</html>

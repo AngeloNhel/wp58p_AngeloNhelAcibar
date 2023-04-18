@@ -14,7 +14,14 @@
 
     <h1>Function Method</h1>
     <div id="MethodArray_Result"></div>
-   
+    
+    <input type="text" value="" id="numberField">
+    <button onclick="Validitenumber()">check</button>  
+    
+
+    <input type="text" value="" id="numberEmail" placeholder="Input Email">
+    <button onclick="Validiteemail()">check</button>  
+    
    <!-- <div id="Method_Result1"></div>
     <div id="Method_Result2"></div>
     <div id="Method_Result3"></div>
@@ -180,21 +187,44 @@
     addDisplayResult("MethodArray_Result", student1);
     addDisplayResult("MethodArray_Result", student2);
     addDisplayResult("MethodArray_Result", studentRest.join(" || "));
+    addDisplayResult("MethodArray_Result", studentRest.join(" || "));
+    addDisplayResult("MethodArray_Result", studentRest.join(" || "));
+
 
     student1 = ["lyks","nicole"]
     student2 = ["jerold","jushua"]
-
-    let resetList = [...student1, ...student2, ...studentRest];
-    addDisplayResult("MethodArray_Result", resetList.join(" || "));
+    
 
   
-    var nums = ['100','300','400','60','40'];
-var total = 0;    
+  //  var nums = ['100','300','400','60','40'];
+// var total = 0;    
 
-for(var i=0; i < nums.length; i++){
-    total = total + Number(nums[i]);
+ // for(var i=0; i < nums.length; i++){
+   // total = total + Number(nums[i]);
+ // }
+// alert(total); 
+
+
+/* pattern and modifier */
+
+let statements = "the coffee arE so dilicius and awesome so that one two three four five";
+
+addDisplayResult("MethodArray_Result",statements.match(/e/g).length);
+addDisplayResult("MethodArray_Result",statements.match(/e/gi).length);
+
+let regExSixDig = /^\d{6}$/
+
+const Validitenumber = () => {
+    let inputStr = document.getElementById('numberField').value;
+   
+    addDisplayResult("MethodArray_Result",regExSixDig.test(inputStr));
+
 }
-alert(total); 
+
+/* gelogigs@kodego.ph */ 
+/* gelogigs12@kodego.ph */
+
+ 
 
 
 </script>
