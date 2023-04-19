@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="toDispalResult"></div>
+</body>
+<script>
+let programmerQuote = `"Make it work, make it right, make it fast." – Kent Beck`;
+
+let employees = ["John","Brian","Michelle","Angela","Nicolas","Grace"];
+
+let referenceNumber = '1904';
+
+let sales = [50, 30, 15, 20, 40, 20, 60, 45];
+
+desplayResult('toDispalResult',sales + "<br>" + programmerQuote + "<br>" + employees + "<br>" + referenceNumber);
+
+let sale = sales.sort();
+desplayResult('toDispalResult',sale);
+
+desplayResult('toDispalResult', sale.sort());
+
+desplayResult('toDispalResult', programmerQuote.toUpperCase());
+
+let date = new Date('04-10-2020');
+desplayResult('toDispalResult', date);
+
+let dates = new Date();
+desplayResult('toDispalResult', dates);
+
+/* sales.splice(0,0,70);
+desplayResult('toDispalResult', sales);
+
+sales.unshift(70);
+desplayResult('toDispalResult', sales); */
+
+let date1 = new Date('2025');
+desplayResult('toDispalResult', date1);
+
+desplayResult('toDispalResult', sales.join(" , "));
+
+/* sales.splice(8,0,35,100);
+desplayResult('toDispalResult', sales); */ 
+
+/* sales.push(100);
+desplayResult('toDispalResult', sales); */
+
+let displayIt = programmerQuote.search('it');
+desplayResult('toDispalResult',displayIt);
+
+let x = programmerQuote.split(" ");
+desplayResult('toDispalResult',x.length);
+
+let sale1 = sales.sort();
+desplayResult('toDispalResult',sale1.pop());
+
+desplayResult('toDispalResult',referenceNumber.padEnd(10,'0'));
+
+sales.splice(4,0,35,70);
+desplayResult('toDispalResult',sales);
+
+let dates1 = new Date('12-25-98');
+desplayResult('toDispalResult', dates1);
+
+</script>
+</html>
